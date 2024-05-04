@@ -10,7 +10,7 @@
 		<classes>
 
 			<class name="testcases.CreateAccountPageTest" />
-			
+			<class name="testcases.LoginPageTest" />
 			<class name="testcases.OrderPlacement" />
 		</classes>
 	</test> <!--

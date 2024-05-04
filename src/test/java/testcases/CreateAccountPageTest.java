@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,12 +11,16 @@ import utilities.UpdateCredentialsUtility;
 
 public class CreateAccountPageTest extends BaseTest {
 
+	
+	static Logger log = Logger.getLogger(CreateAccountPageTest.class);
 	@Test
 	public void CreateAccount() throws InvalidFormatException, IOException {
 
+		
+		log.info("CreateAccount Called");
 		homePage.navigateToHomePage();
 		homePage.clickCreateAccount();
-
+	
 		createAccountPage.enterFirstName(getRandomFirstName);
 		createAccountPage.enterLastName(getRandomLastName);
 		createAccountPage.enterEmail(getRandomEmail);

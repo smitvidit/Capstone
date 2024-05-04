@@ -19,7 +19,7 @@ public class OrderPlacement extends BaseTest {
 	public static String Password;
 
 
-	Logger log = Logger.getLogger(OrderPlacement.class);
+	static Logger log = Logger.getLogger(OrderPlacement.class);
 
 	// Test 3: End-to-End Test of the Entire Flow
 	@Test
